@@ -10,7 +10,9 @@ import store from '../store';
 
 const routes = [
     //dashboard
-    { path: '/', name: 'Home', component: Home },
+    { path: '/', name: 'Home',
+      component: () => import(/* webpackChunkName: "auth-login" */ '../views/calculadora.vue'),
+      meta: { layout: 'auth' } },
     //auth
     {
         path: '/auth/login-boxed',

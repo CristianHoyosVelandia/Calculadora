@@ -2,7 +2,7 @@
     <!-- BEGIN FOOTER -->
     <div class="footer-wrapper">
         <div class="footer-section f-section-1">
-            <p class="">Copyright © 2022 <a target="_blank" href="https://www.skynetsas.com/">SKYNET Fábrica de Software SAS </a>, {{$t('All rights reserved')}}.</p>
+            <p class="">Copyright © 2022 <a target="_blank" href="https://www.skynetsas.com/">SKYNET Fábrica de Software SAS </a>, Todos los derechos reservados.</p>
         </div>
         <div class="footer-section f-section-2">
             <p class="">

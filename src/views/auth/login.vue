@@ -8,14 +8,12 @@
                 <div class="form-content">
                   <!-- MarketPlace Brand Name -->
                   <div class="tc-image"></div>
-                  <h1 class="tc-image-space"> {{ $t('Log In') }} <span class="brand-name"> Calculadora </span></h1>
+                  <h1 class="tc-image-space"> Log In <span class="brand-name"> Calculadora </span></h1>
 
                     <div class="tc-isp"></div>
 
                     <!-- Preguntar si tienen autoregistro o les damos las credenciales -->
                     <br />
-                    <!-- <p class="signup-link"> {{ $t('New Here?') }} <router-link to="/auth/register"> Crear cuenta nueva</router-link></p> -->
-
                     <!-- Formulario de Login -->
                     <form class="text-start" @submit.prevent="hola">
                       
@@ -31,7 +29,7 @@
                         <!-- Pass Input  -->
                         <div id="password-field" class="field-wrapper input mb-2">
                           <div class="d-flex justify-content-between">
-                              <label for="password">{{ $t('Password') }}:</label>
+                              <label for="password"> Clave:</label>
                           </div>
                           <fa :icon="['fas', 'lock']" class="feather feather-lock"> </fa>
                           <input :type="pwd_type" class="form-control" placeholder="Ingrese su contraseña" v-model="password" />
@@ -40,7 +38,7 @@
                         <!-- INFO MODAL  MSJ BOX -->
                         <div class="text-left" id="alertAlignID" v-bind="msjBox" v-if="msjBox.visible === true">
                           <div class="alert" role="alert" v-if="msjBox.status === true" style="color: green">
-                              <strong id="alertID"> {{ $t('Successful Process!') }}</strong>
+                              <strong id="alertID"> Proceso Exitoso !</strong>
                               {{ msjBox.message }}
                           </div>
                           <div class="alert" role="alert" v-else style="color: red">
@@ -51,7 +49,7 @@
 
                         <div class="d-sm-flex justify-content-between mb-4">
                           <div class="field-wrapper toggle-pass d-flex align-items-center">
-                            <p class="d-inline-block">{{ $t('Show Password') }}</p>
+                            <p class="d-inline-block"> Mostrar Clave: </p>
                             
                             <label class="switch s-primary mx-2">
                                 <input v-model="checkPass" type="checkbox" @change="set_pwd_type" class="custom-control-input" checked="" />
@@ -60,13 +58,13 @@
                           </div>
 
                             <div class="field-wrapper">
-                                <button type="submit" class="btn btn-primary" @click="ingresar">{{ $t('LogIn') }}</button>
+                                <button type="submit" class="btn btn-primary" @click="ingresar"> LogIn</button>
                             </div>
 
                         </div>  
 
                         <div class="field-wrapper">
-                          <router-link to="/auth/pass-recovery" class="forgot-pass-link"> {{ $t('Forgot Password?') }}</router-link>
+                          <router-link to="/auth/pass-recovery" class="forgot-pass-link"> Olvidaste tu Clave?</router-link>
                         </div>
                       </div>
                     </form>
